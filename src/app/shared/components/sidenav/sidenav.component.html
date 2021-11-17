@@ -1,0 +1,50 @@
+<mat-sidenav-container>
+
+  <mat-sidenav #sidenav="matSidenav" mode="side" class="mat-elevation-z8">
+    <img class="avatar mat-elevation-z8" src="../../../assets/img/20190811_135042.jpg" width="50%">
+    <h4 class="name">WALTER VILLATORO</h4>
+    <p class="designation">ADMIN</p>
+
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button" routerLink="orders" >
+      <mat-icon>reorder</mat-icon>
+      <span>Orden de trabajo</span>
+    </button>
+
+    <button mat-button class="menu-button">
+      <mat-icon>add_shopping_cart</mat-icon>
+      <span>Venta</span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>shop</mat-icon>
+      <span>Cotizaciones</span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>room</mat-icon>
+      <span>Pedido</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button">
+      <mat-icon>shopping_cart</mat-icon>
+      <span>Compra</span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>home</mat-icon>
+      <span>Inventario</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button">
+      <mat-icon>people</mat-icon>
+      <span>Administrativo</span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>monetization_on</mat-icon>
+      <span>Bancos</span>
+    </button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8 body">
+
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

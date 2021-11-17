@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-header">
+    <h4>ORDEN DE TRABAJO</h4>
+    <mat-spinner diameter="80" class="spinner"></mat-spinner>
+  </div>
+  <div class="card-body" fxLayoutAlign="space-around center">
+    <form [formGroup]="form" (ngSubmit)="nueva()">
+      <img class="avatar mat-elevation-z8" src="../../../../assets/img/fondo2.png" width="10%">
+      <div fxLayout="row wrap">
+          <mat-form-field class="ancho" appearance="outline"><mat-label>IDOrden</mat-label> <input matInput autocomplete="off" formControlName="IDOrden" placeholder="IDOrden"></mat-form-field>
+          <mat-form-field class="ancho" appearance="outline"><mat-label>Fecha</mat-label> <input matInput autocomplete="off" formControlName="Fecha" placeholder="Fecha"></mat-form-field>
+          <mat-form-field class="ancho" appearance="outline"><mat-label>IDTercero</mat-label> <input matInput autocomplete="off" formControlName="IDTercero" placeholder="IDTercero"></mat-form-field>
+          <mat-form-field class="ancho" appearance="outline"><mat-label>NoOrden</mat-label> <input matInput autocomplete="off" formControlName="NoOrden" placeholder="NoOrden"></mat-form-field>
+          <mat-form-field class="ancho" appearance="outline"><mat-label>FechaPropuestaEgreso</mat-label> <input matInput autocomplete="off" formControlName="FechaPropuestaEgreso" placeholder="FechaPropuestaEgreso"></mat-form-field>
+          <mat-form-field class="ancho" appearance="outline"><mat-label>IDCotizacion</mat-label> <input matInput autocomplete="off" formControlName="IDCotizacion" placeholder="IDCotizacion"></mat-form-field>
+          <mat-form-field class="ancho" appearance="outline"><mat-label>IDVehiculo</mat-label> <input matInput autocomplete="off" formControlName="IDVehiculo" placeholder="IDVehiculo"></mat-form-field>
+          <mat-form-field class="ancho" appearance="outline"><mat-label>Estado</mat-label> <input matInput autocomplete="off" formControlName="Estado" placeholder="Estado"></mat-form-field>
+          <button type="submit" class="ancho boton" mat-raised-button color="primary" [disabled]="form.invalid">Ingresar</button>
+      </div>
+    </form>
+  </div>
+</div>
